@@ -1,0 +1,139 @@
+/******************************
+*
+*  RoyalSlider Default Skin 
+*
+*    1. Arrows 
+*    2. Bullets
+*    3. Thumbnails
+*    4. Tabs
+*    5. Fullscreen button
+*    6. Play/close video button
+*    7. Preloader
+*    8. Caption
+*    
+*  Sprite: 'rs-default.png'
+*  Feel free to edit anything
+*  If you don't some part - just delete it
+* 
+******************************/
+
+
+/* Background */
+.periodico,
+.periodico .rsOverflow,
+.periodico .rsSlide,
+.periodico .rsVideoFrameHolder,
+.periodico .rsThumbs {
+	color: #FFF;
+}
+
+
+/***************
+*
+*  1. Arrows
+*
+****************/
+
+.periodico .rsArrow {
+	height: 100%;
+	width: 30px;
+	position: absolute;
+	display: block;
+	cursor: pointer;
+	z-index: 21;
+}
+.periodico.rsVer .rsArrow {
+	width: 100%;
+	height: 44px;
+	
+}
+.periodico.rsVer .rsArrowLeft { top: 0; left: 0; }
+.periodico.rsVer .rsArrowRight { bottom: 0;  left: 0; }
+
+.periodico.rsHor .rsArrowLeft { left: 0; top: 0; }
+.periodico.rsHor .rsArrowRight { right: 0; top:0; }
+
+.periodico .rsArrowIcn {		
+	width: 30px;
+	height: 76px;
+	top: 50%;
+	left: 50%;
+	margin-top:-16px;	
+	margin-left: -16px;
+	position: absolute;	
+	cursor: pointer;	
+	background: url('periodico.png') no-repeat;
+}
+.periodico .rsArrowIcn:hover {
+	
+}
+
+.periodico.rsHor .rsArrowLeft .rsArrowIcn { background-position: -64px -32px; }
+.periodico.rsHor .rsArrowRight .rsArrowIcn { background-position: -64px -64px; }
+
+.periodico.rsVer .rsArrowLeft .rsArrowIcn { background-position: -96px -32px; }
+.periodico.rsVer .rsArrowRight .rsArrowIcn { background-position: -96px -64px; }
+
+.periodico .rsArrowDisabled .rsArrowIcn { opacity: .2; filter: alpha(opacity=20);  *display: none; }
+
+
+/***************
+*
+*  2. Bullets
+*
+****************/
+
+.periodico .rsBullets {
+	display: inline-block;
+	position: absolute;
+	z-index: 35;
+	left: 0;
+	bottom: 20px;
+	width: auto;
+	height: auto;
+	text-align: center;
+	line-height: 25px;
+	margin-left: 50%;
+	overflow: hidden;
+}
+.periodico .rsBullet {
+	display: inline-block;
+	*display:inline; 
+	*zoom:1;
+	height: 13px;
+	margin-right: 3px;
+	width: 13px;
+}
+.periodico .rsBullet span {
+	background: #b0c802;
+	border-radius: 50%;
+	cursor: pointer;
+	display: block;
+	height: 13px;
+	width: 13px;
+}
+.periodico .rsBullet.rsNavSelected span {
+	background-color: #808914;
+	cursor: auto;
+}
+
+
+
+
+
+/***************
+*
+*  7. Preloader
+*
+****************/
+
+.periodico .rsPreloader {
+	width:20px;
+	height:20px;
+	background-image:url(../preloaders/preloader-white.gif);
+
+	left:50%;
+	top:50%;
+	margin-left:-10px;
+	margin-top:-10px;	
+}

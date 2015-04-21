@@ -1,0 +1,366 @@
+/*
+Theme Name: Periódico AM
+Description: Plantilla para el sitio web del periódico AM.
+*/
+
+/* Media Query */
+@font-face
+{
+ font-family: 'area-font';
+ src: url('DINPro-Regular.otf');
+
+} 
+
+@font-face
+{
+ font-family: 'area-font-bold';
+ src: url('DINPro-Bold.otf');
+} 
+
+
+
+/*--------------Global styles-----------------*/
+
+
+body
+{
+	background: #f6f6f6;
+}
+body, p{
+	font-family: 'area-font', sans-serif !important;
+}
+footer
+{
+	background: #b1c700;
+	color: #FFF;
+	padding: 16px 0;
+}
+footer p
+{
+	color: #FFF;
+}
+footer .row > div
+{
+	min-height: 105px;
+}
+h1, h2, h3, h4, h5, h6{
+	font-family: 'area-font-bold', sans-serif !important;
+}
+header
+{
+	overflow: hidden;
+}
+
+.main #menu-principal
+{
+	background-image: linear-gradient(to bottom, #a6c840 0px, #c2d587 100%);
+	min-height: 35px; 
+}
+
+.main #menu-principal #barra-inicio ul li a
+{
+	color: #fff;
+	font-size: 16px;
+	padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+#menu-menu-principal li .sub-menu 
+{
+	background-color: #a6c840;
+	color: #fff;
+	font-size: 16px;
+}
+
+#menu-principal .open .dropdown-toggle
+{
+	background-color: #c2d587 !important;
+	background-image: none !important;
+	color: #fff;
+}
+
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus
+{
+	background-color: #c2d587 !important;
+	background-image: none !important;
+	color: #fff;
+	font-size: 16px;
+}
+
+p
+{
+	color: #838383;
+}
+.barra-util
+{
+	background: #a6c840;
+	color: #FFF;
+	overflow: hidden;
+	padding: 5px;
+}
+.barra-util form
+{
+	margin: 0; 
+	padding: 0;
+}
+.barra-util input
+{
+	border: 0;
+	color: #999;
+	width: 85%;
+}
+.barra-util input[type="submit"]
+{
+	background: transparent url(images/search-icon.png) center center no-repeat;
+	height: 24px;
+	text-indent: -9999px;
+	width: 24px;
+}
+.barra-util label
+{
+	display: none;
+}
+.barra-util span
+{
+	border-right: thin dashed #d6d6d6;
+	font-size: 12px;
+	padding: 6px 25px;
+}
+.contact-links
+{
+	border-right: thin dashed #FFF;
+	padding-top: 6px;
+}
+.content
+{
+	padding: 15px 0;
+}
+.copyright
+{
+	border-right: thin dashed #FFF;
+	padding-bottom: 12px;
+}
+.destacado div
+{
+	border: thin dashed #d6d6d6;
+	padding: 10px;
+}
+.destacado h4
+{
+	border-top: thin dashed #d6d6d6;
+	color: #a6c63f;
+	margin-bottom: 0;
+	padding: 15px 0 8px;
+	text-align: center;
+	text-transform: uppercase;
+}
+.destacado img
+{
+	float: left;
+	margin-bottom: 7px;
+	margin-right: 13px;
+}
+.ediciones-impresas
+{
+	background: #d6d6d6;
+	padding: 5px;
+	text-align: center;
+}
+.ediciones-impresas img
+{
+	height: auto;
+	width: 100%;
+}
+
+.post 
+{
+	padding-top: 14px;
+}
+
+.home .post, 
+.archive .post
+{
+	height: 500px;
+}
+.home .post figure, 
+.archive .post figure
+{
+	border-bottom: 4px solid #e5e5e5;
+}
+.home .post h2, 
+.archive .post h2
+{
+	line-height: 1;
+	margin-top: 10px;
+}
+.home .post h2 a, 
+.archive .post h2 a
+{
+	color: #9bb73e;
+	text-decoration: none;
+}
+.image-article img
+{
+	height: auto;
+	max-width: 100%;
+}
+.logo
+{
+	margin-left: 35px;
+}
+.main
+{
+	background: #FFF;
+	box-shadow: 0 0 30px 0 #999;
+}
+.menu-util-container
+{
+	overflow: hidden;
+}
+.menu-util-container a
+{
+	color: #FFF;
+	padding: 10px 12px;
+}
+
+.post h2
+{
+	color: #9bb73e;
+}
+
+.post p
+{
+	text-align: justify;
+}
+
+
+.post .category
+{
+	display: inline;
+	font-weight: bold;
+}
+.post .category a
+{
+	color: #545454;
+}
+.post .date
+{
+	color: #a5c73f;
+	margin-left: 15px;
+}
+.post .comments
+{
+	background: url(images/comments-icon.png) left center no-repeat;
+	color: #a5c73f;
+	margin-left: 20px;
+	padding-left: 20px;
+}
+.post .meta {
+	border-bottom: thin dashed #d6d6d6;
+	margin-bottom: 8px;
+	padding-bottom: 3px;
+}
+.rsContent
+{
+	position: relative;
+}
+.rsContent .info
+{
+	background: rgba(0, 0, 0, 0.5);
+	bottom: 0;
+	color: #FFF;
+	padding: 10px 25px;
+	position: absolute;
+	width: 100%;
+}
+.rsContent .info a
+{
+	color: #FFF;
+}
+.rsContent .info p
+{
+	color: #d8d6d7;
+}
+.rsContent .info .categoria
+{
+	font-weight: bold;
+}
+.rsContent .meta
+{
+	border-bottom: thin dashed #fff;
+}
+.rsImg
+{
+	width: 100%;
+}
+.sd-content
+{
+	text-align: center;
+}
+.sd-title
+{
+	border-top: thin dashed #ddd;
+	color: #c4d440;
+	display: block !important;
+	font-size: 1.5em !important;
+	margin: 10px 0 !important;
+	padding-top: 10px;
+	text-align: center;
+	text-transform: uppercase;
+}
+.sd-title::before, 
+.sd-title:before
+{
+	border-top: 0 !important;
+	display: inline !important;
+	height: 0;
+}
+
+.sidebar 
+{
+    margin: 0 0 40px;
+}
+
+.sidebar > div
+{
+	margin-right: 15px;
+	margin-bottom: 30px;
+}
+.sidebar h2
+{
+	background: #b1c700;
+	border-left: 4px solid #fef200;
+	color: #FFF;
+	font-size: 1.6em;
+	font-weight: bold;
+	padding: 3px 0;
+	text-align: center;
+	text-transform: uppercase;
+}
+.top-ads
+{
+	margin-top: 13px;
+}
+#adwidget_imagewidget-3
+{
+	margin-top: 15px;
+	text-align: center;
+}
+#main-logo
+{
+	border-right: thin dashed #d6d6d6;
+	margin-top: 6px;
+	padding-top: 6px;
+}
+
+#main-logo .pull-right
+{
+	padding-right: 30px;
+}
+
+#main-logo .pull-right img 
+{
+	height: 100px;
+	width: auto;
+}
+
