@@ -64,6 +64,9 @@ header
 	padding-bottom: 5px;
     padding-top: 5px;
 }
+.main #menu-principal #barra-inicio ul li a:hover{
+	background-color: #C2D586;
+}
 
 #menu-menu-principal li .sub-menu 
 {
@@ -97,6 +100,7 @@ p
 	color: #FFF;
 	overflow: hidden;
 	padding: 5px;
+	width: 100%
 }
 .barra-util form
 {
@@ -107,7 +111,7 @@ p
 {
 	border: 0;
 	color: #999;
-	width: 85%;
+	width: 90%;
 }
 .barra-util input[type="submit"]
 {
@@ -122,9 +126,11 @@ p
 }
 .barra-util span
 {
-	border-right: thin dashed #d6d6d6;
 	font-size: 12px;
-	padding: 6px 25px;
+	padding: 15px 25px;
+	width: 100%;
+	text-align: center;
+	display: inline-block;
 }
 .contact-links
 {
@@ -363,4 +369,18 @@ p
 	height: 100px;
 	width: auto;
 }
-
+/*------------- Media Queries ---------------*/
+@media (min-width:768px){
+	.barra-util form{
+		width: 100%;
+	}
+}
+@media (min-width:992px){
+	.barra-util span{
+		border-right: thin dashed #d6d6d6;
+		padding: 6px 25px;
+	}
+	.barra-util input{
+		width: 85%;
+	}
+}

@@ -25,10 +25,16 @@
 			</div>
 			<div class="col-sm-6">
 				<div class="barra-util">
-					<span><?php echo date_i18n('l j \d\e F \d\e Y', time()); ?></span>
-					<form id="form-search" class="navbar-form navbar-right" role="search">
-			        	<?php get_search_form(); ?>
-			      	</form>
+					<div class="row">
+						<div class="col-md-6">
+							<span><?php echo date_i18n('l j \d\e F \d\e Y', time()); ?></span>
+						</div>
+						<div class="col-md-6">
+							<form id="form-search" class="navbar-form navbar-right" role="search">
+					        	<?php get_search_form(); ?>
+					      	</form>
+					      </div>
+				      </div>
 				</div>
 				<div class="top-ads"> Este espacio esta pensado para usted. </div>
 				<!-- Espacio publicitario -->
