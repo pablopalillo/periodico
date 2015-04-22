@@ -369,10 +369,17 @@ p
 	height: 100px;
 	width: auto;
 }
+.post-individual img{
+	max-width: 100%;
+	height: auto;
+}
 /*------------- Media Queries ---------------*/
 @media (min-width:768px){
 	.barra-util form{
 		width: 100%;
+	}
+	#slider_container div#slider{
+		width: 100% !important;
 	}
 }
 @media (min-width:992px){

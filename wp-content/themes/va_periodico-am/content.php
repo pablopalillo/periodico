@@ -1,4 +1,4 @@
-<div id="post-<?php the_ID(); ?>" <?php post_class('col-sm-12') ?>>
+<div id="post-<?php the_ID(); ?>" class="col-sm-12">
 	<h2>
 		<?php echo get_the_title() ?>
 	</h2>
