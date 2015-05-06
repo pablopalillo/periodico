@@ -372,6 +372,21 @@ p
 	max-width: 100%;
 	height: auto;
 }
+
+div#slider{
+	background-size: 100% 100% !important;
+	background-position-x: center !important;
+}
+
+.nivo_slider img{
+	width: 100%;
+}
+
+.nivo-slice{
+	background-size: 100% 100% !important;
+	background-position-x: center !important;
+}
+
 /*------------- Media Queries ---------------*/
 @media (min-width:768px){
 	.barra-util form{
