@@ -23,23 +23,23 @@
 					<img src="<?php echo bloginfo('template_url') .'/images/logo-amva.png' ?>" alt="Área Metropolitana del Valle del Aburrá">
 				</a>
 			</div>
-			<div class="col-sm-6">
-				<div class="barra-util">
-					<div class="row">
-						<div class="col-md-6">
-							<span><?php echo date_i18n('l j \d\e F \d\e Y', time()); ?></span>
-						</div>
-						<div class="col-md-6">
-							<form id="form-search" class="navbar-form navbar-right" role="search">
-					        	<?php get_search_form(); ?>
-					      	</form>
-					      </div>
+		<div class="col-sm-6">
+			<div class="barra-util">
+				<div class="row">
+					<div class="col-md-6">
+						<span><?php echo date_i18n('l j \d\e F \d\e Y', time()); ?></span>
+					</div>
+					<div class="col-md-6">
+						<form id="form-search" class="navbar-form navbar-right" role="search">
+				        	<?php get_search_form(); ?>
+				      	</form>
 				      </div>
-				</div>
-				<div class="top-ads"> Este espacio esta pensado para usted. </div>
-				<!-- Espacio publicitario -->
-				<!-- <div class="top-ads"><?php //dynamic_sidebar( "widget-ads-horizontal" ); ?></div> -->
+			      </div>
 			</div>
+			<div class="top-ads"> Este espacio esta pensado para usted. </div>
+			<!-- Espacio publicitario -->
+			<!-- <div class="top-ads"><?php //dynamic_sidebar( "widget-ads-horizontal" ); ?></div> -->
+		</div>
 		</header>
 		<?php
 
