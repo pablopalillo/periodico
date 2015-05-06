@@ -29,6 +29,7 @@
 					
 					?>
 					<p>Todos los derechos reservados Periódico Área Metropolitana 2014</p>
+					<p>Carrera 43 A 17 sur 30 Telemedellín, Telefono 4489590 op 2 </p>
 				</div>
 				<div class="col-sm-1">
 					<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('redes-sociales') ) : ?><?php endif; ?>
